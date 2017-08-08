@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "webext-typescript-react-redux",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "nathan-webext-typescript@yergler.net",
+      "strict_min_version": "51.0"
+    }
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "48": "images/Watermelon-48.png",
+      "96": "images/Watermelon-96.png"
+    },
+    "default_title": "React Example",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab"
+  ]
+}

@@ -15,7 +15,11 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/web-ext-types"
+    ]
   },
   "exclude": [
     "node_modules",
@@ -24,6 +28,8 @@
     "acceptance-tests",
     "webpack",
     "jest",
+    "extension/dist",
+    "webpack.config.js",
     "src/setupTests.ts"
   ]
 }

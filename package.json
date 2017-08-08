@@ -9,13 +9,21 @@
     "@types/react-dom": "^15.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts-ts": "2.5.0"
+    "react-scripts-ts": "2.5.0",
+    "webpack": "^3.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-react": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.4.2",
+    "web-ext-types": "^0.3.1"
+  },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "build": "webpack --display-error-details --progress --colors",
+    "start": "web-ext run -s extension/",
+    "test": "react-scripts-ts test --env=jsdom"
   }
 }

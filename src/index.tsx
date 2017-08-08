@@ -1,11 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import Popup from './popup';
 import './index.css';
 
+
 ReactDOM.render(
-  <App />,
+  <Popup/>,
   document.getElementById('root') as HTMLElement
 );
-registerServiceWorker();
