@@ -20,7 +20,10 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "page": "background.html"
+    "scripts": [
+      "dist/browser-polyfill.js",
+      "dist/background.js"
+    ]
   },
 
   "permissions": [
