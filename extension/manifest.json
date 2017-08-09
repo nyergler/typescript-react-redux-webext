@@ -19,6 +19,9 @@
     "default_title": "React Example",
     "default_popup": "popup.html"
   },
+  "background": {
+    "page": "background.html"
+  },
 
   "permissions": [
     "activeTab"

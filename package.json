@@ -7,9 +7,13 @@
     "@types/node": "^8.0.19",
     "@types/react": "^16.0.1",
     "@types/react-dom": "^15.5.2",
+    "@types/react-redux": "^4.4.47",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
     "react-scripts-ts": "2.5.0",
+    "redux": "^3.7.2",
+    "redux-webext": "^1.1.2",
     "webpack": "^3.5.1"
   },
   "devDependencies": {
@@ -17,12 +21,13 @@
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-preset-react": "^6.24.1",
+    "jest": "^20.0.4",
     "source-map-loader": "^0.2.1",
     "typescript": "^2.4.2",
     "web-ext-types": "^0.3.1"
   },
   "scripts": {
-    "build": "webpack --display-error-details --progress --colors",
+    "build": "webpack --display-error-details --progress --colors -w",
     "start": "web-ext run -s extension/",
     "test": "react-scripts-ts test --env=jsdom"
   }

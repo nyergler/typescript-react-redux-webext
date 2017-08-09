@@ -8,7 +8,8 @@ module.exports = {
     // and included in the extension source.
     // For example, you could add a background script like:
     // background: './src/background.js',
-    popup: './src/popup.tsx',
+    popup: './src/pages/popup.tsx',
+    background: './src/pages/background.tsx',
   },
   output: {
     // This copies each source entry into the extension dist folder named
